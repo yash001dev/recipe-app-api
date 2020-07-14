@@ -2,8 +2,6 @@ language: python
 python:
   - "3.8.3"
 
-env:
-  - SECRET_KEY='k9pg3agsckd$k%&1oeavq%7jk(%067*i=!0jyz7-=1pdh3c-x!'
 services:
   - postgresql
 
