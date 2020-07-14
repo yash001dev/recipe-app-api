@@ -1,5 +1,15 @@
-language:python
+language: python
 python:
   - "3.8.3"
 
-before_script: pip install -r requirements.txt
+env:
+  - SECRET_KEY='TEST'
+services:
+  - postgresql
+
+install:
+  - pipenv install
+
+script:
+  - python manage.py test
+  
